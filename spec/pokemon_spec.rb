@@ -20,7 +20,7 @@ describe "Pokemon" do
   end
 
   describe ".save" do
-    xit 'saves an instance of a pokemon with the correct id' do
+    it 'saves an instance of a pokemon with the correct id' do
       Pokemon.save("Pikachu", "electric", @db)
 
       pikachu_from_db = @db.execute("SELECT * FROM pokemon WHERE name = 'Pikachu'")
@@ -29,7 +29,7 @@ describe "Pokemon" do
   end
 
   describe ".find" do
-    xit 'finds a pokemon from the database by their id number and returns a new Pokemon object' do
+    it 'finds a pokemon from the database by their id number and returns a new Pokemon object' do
       # The find method creates a new Pokemon after selecting their row from the database by their id number.
       Pokemon.save("Pikachu", "electric", @db)
 
