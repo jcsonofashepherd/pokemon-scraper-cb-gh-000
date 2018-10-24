@@ -29,7 +29,7 @@ class Pokemon
   end
 
   def alter_hp(id, database_connection)
-
+    
   end
 
 end
