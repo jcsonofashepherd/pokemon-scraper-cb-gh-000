@@ -9,6 +9,7 @@ class Pokemon
     @type = type
     @db = db
   #  @@all << self
+    self
   end
 
   def self.all
