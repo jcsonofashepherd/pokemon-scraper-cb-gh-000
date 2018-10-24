@@ -28,8 +28,8 @@ class Pokemon
     self.new(id: id, name: name, type: type, db: database_connection, hp: hp)
   end
 
-  def alter_hp(id, database_connection)
-
+  def alter_hp(hp, database_connection)
+    database_connection.execute("UPDATE pokemon SET hp = ? WHERE id = ?", hp, :id)
   end
 
 end
