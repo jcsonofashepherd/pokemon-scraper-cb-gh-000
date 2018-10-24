@@ -26,4 +26,9 @@ class Pokemon
     type = pokemon_from_db[0][2]
     self.new(id: id, name: name, type: type, db: database_connection)
   end
+
+  def alter_hp(id, database_connection)
+    
+  end
+  
 end
