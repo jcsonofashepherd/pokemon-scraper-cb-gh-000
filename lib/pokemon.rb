@@ -8,8 +8,7 @@ class Pokemon
     @name = name
     @type = type
     @db = db
-  #  @@all << self
-    self
+    @@all << self
   end
 
   def self.all
