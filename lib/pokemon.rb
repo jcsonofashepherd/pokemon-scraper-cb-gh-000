@@ -24,11 +24,12 @@ class Pokemon
     pokemon_from_db = database_connection.execute("SELECT * FROM pokemon WHERE id = ?", id)
     name = pokemon_from_db[0][1]
     type = pokemon_from_db[0][2]
+    hp = pokemon_from_db[0][3]
     self.new(id: id, name: name, type: type, db: database_connection)
   end
 
   def alter_hp(id, database_connection)
-    
+
   end
-  
+
 end
