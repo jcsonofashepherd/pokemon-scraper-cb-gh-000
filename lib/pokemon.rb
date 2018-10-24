@@ -23,7 +23,6 @@ class Pokemon
     pokemon_from_db = database_connection.execute("SELECT * FROM pokemon WHERE id = ?", id)
     name = pokemon_from_db[1]
     type = pokemon_from_db[2]
-    self.new(id: id, name: name, type: type, db: database_connection)
-    puts pokemon_from_db
+    self.new(id: id, name: pokemon_from_db, type: type, db: database_connection)
   end
 end
