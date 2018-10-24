@@ -24,5 +24,6 @@ class Pokemon
     name = pokemon_from_db[1]
     type = pokemon_from_db[2]
     self.new(id: id, name: name, type: type, db: database_connection)
+    puts pokemon_from_db
   end
 end
